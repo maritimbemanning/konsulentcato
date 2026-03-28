@@ -57,8 +57,8 @@ export default function Hero() {
           </h1>
 
           <motion.p
-            className="mb-14 text-[17px] leading-[1.8] text-text-secondary"
-            style={{ maxWidth: 420 }}
+            className="mb-12 text-[16px] leading-[1.8] text-text-secondary"
+            style={{ maxWidth: 400 }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease, delay: 0.9 }}
@@ -66,6 +66,7 @@ export default function Hero() {
             {t.hero.subtitle}
           </motion.p>
 
+          {/* 2. Proper CTA button */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -73,10 +74,10 @@ export default function Hero() {
           >
             <a
               href="#kontakt"
-              className="group inline-flex items-center gap-4 bg-bg-dark px-10 py-5 text-[15px] tracking-[0.08em] font-medium text-text-light uppercase transition-all duration-300 hover:bg-accent"
+              className="group inline-flex items-center gap-3 rounded-full bg-bg-dark px-7 py-3.5 text-[14px] font-medium text-text-light transition-all duration-300 hover:bg-accent"
             >
               {t.hero.cta}
-              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1.5">&rarr;</span>
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
             </a>
           </motion.div>
         </div>

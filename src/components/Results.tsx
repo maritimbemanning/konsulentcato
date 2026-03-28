@@ -38,7 +38,7 @@ export default function Results() {
       <Reveal y={50}>
         <div className="relative" style={{ marginTop: 120 }}>
           <div className="relative aspect-[3/1] w-full overflow-hidden md:aspect-[3.5/1]">
-            <Image src="/images/presentation.jpg" alt="Cato presenting to a team" fill className="object-cover object-[center_30%]" sizes="100vw" placeholder="blur" blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect fill='%23b0a090' width='8' height='8'/%3E%3C/svg%3E" />
+            <Image src="/images/presentation.jpg" alt="Cato presenting to a team" fill className="object-cover object-[center_30%]" sizes="100vw" placeholder="blur" blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect fill='%2390a8b8' width='8' height='8'/%3E%3C/svg%3E" />
             <div className="absolute inset-0 bg-gradient-to-t from-bg/40 via-transparent to-transparent" />
           </div>
         </div>

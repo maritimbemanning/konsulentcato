@@ -16,22 +16,31 @@ export default function Services() {
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-x-20 md:gap-y-20">
-          {t.services.items.map((item, i) => (
-            <Reveal key={i} delay={i * 0.08} y={30}>
-              <div>
-                <span className="mb-4 block text-[12px] tabular-nums text-text-secondary/50">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mb-4 font-[family-name:var(--font-serif)] text-[1.35rem] leading-[1.35] text-text md:text-[1.5rem]">
-                  {item.title}
-                </h3>
-                <p className="text-[15px] leading-[1.8] text-text-secondary">
-                  {item.description}
-                </p>
-              </div>
-            </Reveal>
-          ))}
+        {/* 5. Tighter rhythm, still alternating */}
+        <div className="space-y-24 md:space-y-32">
+          {t.services.items.map((item, i) => {
+            const isOdd = i % 2 !== 0;
+            return (
+              <Reveal key={i} delay={0.05} y={40}>
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-20">
+                  <div className={isOdd ? "md:order-2" : ""}>
+                    <span className="mb-3 block text-[12px] tabular-nums text-text-secondary/60">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="font-[family-name:var(--font-serif)] text-[1.5rem] leading-[1.3] text-text md:text-[1.75rem]">
+                      {item.title}
+                    </h3>
+                  </div>
+                  <div className={`flex items-end ${isOdd ? "md:order-1" : ""}`}>
+                    {/* 3. Consistent 16px body text */}
+                    <p className="text-[16px] leading-[1.8] text-text-secondary" style={{ maxWidth: 400 }}>
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </Reveal>
+            );
+          })}
         </div>
       </Container>
     </section>
