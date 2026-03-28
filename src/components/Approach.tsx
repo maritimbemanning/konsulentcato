@@ -11,7 +11,7 @@ export default function Approach() {
   return (
     <section id="tilnærming" className="relative overflow-hidden bg-bg-dark" style={{ paddingTop: 140, paddingBottom: 140 }}>
       <div className="absolute inset-0">
-        <Image src="/images/gap-bridge.jpg" alt="" fill className="object-cover opacity-[0.04] grayscale" sizes="100vw" aria-hidden="true" placeholder="blur" blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect fill='%231a2332' width='8' height='8'/%3E%3C/svg%3E" />
+        <Image src="/images/dubai.jpg" alt="" fill className="object-cover opacity-[0.04] grayscale" sizes="100vw" aria-hidden="true" placeholder="blur" blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect fill='%231a2332' width='8' height='8'/%3E%3C/svg%3E" />
         <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/60 via-transparent to-bg-dark/70" />
       </div>
 

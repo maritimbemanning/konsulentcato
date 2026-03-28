@@ -58,7 +58,7 @@ export default function Background() {
       <Reveal y={60}>
         <div className="relative z-10 mx-auto max-w-[1400px]" style={{ marginTop: 120, marginBottom: -120 }}>
           <div className="relative aspect-[2.4/1] overflow-hidden">
-            <Image src="/images/presentation.jpg" alt="Cato presenting to a team" fill className="object-cover object-[center_30%]" sizes="100vw" placeholder="blur" blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect fill='%23b0a090' width='8' height='8'/%3E%3C/svg%3E" />
+            <Image src="/images/gap-bridge.jpg" alt="" fill className="object-cover object-[center_30%]" sizes="100vw" placeholder="blur" blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect fill='%23b0a090' width='8' height='8'/%3E%3C/svg%3E" />
             <div className="absolute inset-0 bg-gradient-to-t from-bg/20 via-transparent to-transparent" />
           </div>
         </div>
